@@ -1,9 +1,10 @@
 :root {
-  --bg: #f6f7fb;
-  --card: #ffffff;
-  --text: #1f2430;
-  --muted: #5c6476;
-  --shadow: 0 12px 30px rgba(21, 31, 52, 0.12);
+  --bg: #f5f3ee;
+  --text: #1f1c19;
+  --muted: #61574d;
+  --line: #ddd4c8;
+  --card: #fffdf8;
+  --shadow: 0 18px 40px rgba(67, 48, 20, 0.14);
 }
 
 * {
@@ -12,51 +13,134 @@
 
 body {
   margin: 0;
-  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
-  background: linear-gradient(180deg, #f8f9ff 0%, #eef1ff 100%);
   color: var(--text);
+  background: radial-gradient(circle at 10% 10%, #fff2dd 0%, transparent 36%),
+    radial-gradient(circle at 80% 20%, #e7f1ff 0%, transparent 34%),
+    linear-gradient(180deg, #fdfbf6 0%, #f2ede2 100%);
+  font-family: "Avenir Next", "PingFang SC", "Microsoft YaHei", sans-serif;
+  min-height: 100vh;
+}
+
+.bg-orb {
+  position: fixed;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.orb-a {
+  background: #ffc56f;
+  top: -120px;
+  left: -60px;
+}
+
+.orb-b {
+  background: #7fb0f8;
+  bottom: -140px;
+  right: -90px;
 }
 
 .wrap {
-  width: min(1100px, 92vw);
-  margin: 32px auto 48px;
+  position: relative;
+  z-index: 1;
+  width: min(1200px, 94vw);
+  margin: 28px auto 56px;
 }
 
-.header {
-  text-align: center;
+.hero {
   margin-bottom: 20px;
 }
 
-.header h1 {
+.tag {
   margin: 0;
-  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  color: #9f6b21;
+  letter-spacing: 0.14em;
+  font-size: 0.77rem;
+  font-weight: 700;
 }
 
-.header p {
-  margin: 8px 0 0;
+.hero h1 {
+  margin: 8px 0 6px;
+  font-size: clamp(1.7rem, 3.6vw, 3rem);
+  line-height: 1.05;
+}
+
+.subtitle {
+  margin: 0;
   color: var(--muted);
+  max-width: 740px;
+}
+
+.meta {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.meta span {
+  display: inline-block;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.75);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  color: #4f463d;
 }
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 14px;
+  gap: 16px;
 }
 
-.gallery img {
+.photo-card {
+  margin: 0;
+  background: var(--card);
+  border: 1px solid rgba(136, 111, 75, 0.2);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.photo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 45px rgba(67, 48, 20, 0.2);
+}
+
+.photo {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  border-radius: 14px;
-  background: var(--card);
-  box-shadow: var(--shadow);
+  display: block;
   cursor: zoom-in;
-  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.gallery img:hover {
-  transform: translateY(-4px);
-  filter: saturate(1.06);
+.caption {
+  padding: 10px 12px 12px;
+}
+
+.caption h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.caption p {
+  margin: 5px 0 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.empty {
+  border: 1px dashed #b7a287;
+  border-radius: 14px;
+  padding: 18px;
+  color: #7a6549;
+  background: rgba(255, 255, 255, 0.66);
 }
 
 .lightbox {
@@ -65,8 +149,11 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
-  background: rgba(14, 17, 28, 0.85);
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(13, 15, 19, 0.88);
   padding: 20px;
+  z-index: 20;
 }
 
 .lightbox.open {
@@ -74,27 +161,35 @@ body {
 }
 
 .lightbox img {
-  max-width: min(1000px, 94vw);
-  max-height: 88vh;
+  max-width: min(1080px, 94vw);
+  max-height: 84vh;
   border-radius: 12px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 20px 56px rgba(0, 0, 0, 0.5);
+}
+
+#lightboxCaption {
+  margin: 0;
+  color: #f2eee8;
+  font-size: 0.92rem;
 }
 
 .close {
   position: absolute;
   top: 16px;
   right: 16px;
-  width: 40px;
-  height: 40px;
-  border: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 999px;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1;
   cursor: pointer;
   color: #fff;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.14);
 }
 
-.close:hover {
-  background: rgba(255, 255, 255, 0.3);
+@media (max-width: 640px) {
+  .photo {
+    height: 160px;
+  }
 }

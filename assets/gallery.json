@@ -1,0 +1,34 @@
+{
+  "photos": [
+    {
+      "src": "https://picsum.photos/id/1015/1200/900",
+      "title": "山谷清晨",
+      "date": "2025-10-02"
+    },
+    {
+      "src": "https://picsum.photos/id/1025/1200/900",
+      "title": "街边黄昏",
+      "date": "2025-10-03"
+    },
+    {
+      "src": "https://picsum.photos/id/1035/1200/900",
+      "title": "周末散步",
+      "date": "2025-10-04"
+    },
+    {
+      "src": "https://picsum.photos/id/1043/1200/900",
+      "title": "雨后城市",
+      "date": "2025-10-05"
+    },
+    {
+      "src": "https://picsum.photos/id/1050/1200/900",
+      "title": "窗边光影",
+      "date": "2025-10-06"
+    },
+    {
+      "src": "https://picsum.photos/id/1067/1200/900",
+      "title": "公园傍晚",
+      "date": "2025-10-07"
+    }
+  ]
+}
