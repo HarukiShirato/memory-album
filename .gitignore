@@ -8,3 +8,7 @@ output/
 # Keep folder structure, ignore real raw photos
 data/photos_raw/*
 !data/photos_raw/.gitkeep
+
+# Course docs you do not want on GitHub
+*计划书*.docx
+记忆相册计划书.docx
