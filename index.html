@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>记忆相册</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>记忆相册</h1>
+      <p>简单的照片展示墙</p>
+    </header>
+
+    <section class="gallery">
+      <img src="https://picsum.photos/id/1015/800/600" alt="照片 1">
+      <img src="https://picsum.photos/id/1025/800/600" alt="照片 2">
+      <img src="https://picsum.photos/id/1035/800/600" alt="照片 3">
+      <img src="https://picsum.photos/id/1043/800/600" alt="照片 4">
+      <img src="https://picsum.photos/id/1050/800/600" alt="照片 5">
+      <img src="https://picsum.photos/id/1067/800/600" alt="照片 6">
+      <img src="https://picsum.photos/id/1074/800/600" alt="照片 7">
+      <img src="https://picsum.photos/id/1084/800/600" alt="照片 8">
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close" id="closeBtn" aria-label="关闭">×</button>
+    <img id="lightboxImg" alt="放大预览">
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+
+# Local generated outputs
+output/
+
+# Keep folder structure, ignore real raw photos
+data/photos_raw/*
+!data/photos_raw/.gitkeep
