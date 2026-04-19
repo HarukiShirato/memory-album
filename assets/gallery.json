@@ -1,63 +1,58 @@
 ﻿{
     "photos":  [
                    {
-                       "src":  "./assets/photos/微信图片_20260419104011.jpg",
-                       "title":  "微信图片_20260419104011",
+                       "src":  "./assets/photos/花.jpg",
+                       "title":  "花",
                        "date":  "2026-04-19"
                    },
                    {
-                       "src":  "./assets/photos/微信图片_20260419104025.jpg",
-                       "title":  "微信图片_20260419104025",
+                       "src":  "./assets/photos/黄昏.jpg",
+                       "title":  "黄昏",
                        "date":  "2026-04-19"
                    },
                    {
-                       "src":  "./assets/photos/微信图片_20260419104029.jpg",
-                       "title":  "微信图片_20260419104029",
+                       "src":  "./assets/photos/教室.jpg",
+                       "title":  "教室",
                        "date":  "2026-04-19"
                    },
                    {
-                       "src":  "./assets/photos/微信图片_20260419104033.jpg",
-                       "title":  "微信图片_20260419104033",
+                       "src":  "./assets/photos/阶梯.jpg",
+                       "title":  "阶梯",
                        "date":  "2026-04-19"
                    },
                    {
-                       "src":  "./assets/photos/微信图片_20260419104039.jpg",
-                       "title":  "微信图片_20260419104039",
+                       "src":  "./assets/photos/路.jpg",
+                       "title":  "路",
                        "date":  "2026-04-19"
                    },
                    {
-                       "src":  "./assets/photos/微信图片_20260419104042.jpg",
-                       "title":  "微信图片_20260419104042",
+                       "src":  "./assets/photos/木.jpg",
+                       "title":  "木",
                        "date":  "2026-04-19"
                    },
                    {
-                       "src":  "./assets/photos/微信图片_20260419104048.jpg",
-                       "title":  "微信图片_20260419104048",
+                       "src":  "./assets/photos/树.jpg",
+                       "title":  "树",
                        "date":  "2026-04-19"
                    },
                    {
-                       "src":  "./assets/photos/微信图片_20260419104129.jpg",
-                       "title":  "微信图片_20260419104129",
+                       "src":  "./assets/photos/水.jpg",
+                       "title":  "水",
                        "date":  "2026-04-19"
                    },
                    {
-                       "src":  "./assets/photos/微信图片_20260419104132.jpg",
-                       "title":  "微信图片_20260419104132",
+                       "src":  "./assets/photos/通海湖.jpg",
+                       "title":  "通海湖",
                        "date":  "2026-04-19"
                    },
                    {
-                       "src":  "./assets/photos/微信图片_20260419104138.jpg",
-                       "title":  "微信图片_20260419104138",
+                       "src":  "./assets/photos/图书馆.jpg",
+                       "title":  "图书馆",
                        "date":  "2026-04-19"
                    },
                    {
-                       "src":  "./assets/photos/微信图片_20260419104147.jpg",
-                       "title":  "微信图片_20260419104147",
-                       "date":  "2026-04-19"
-                   },
-                   {
-                       "src":  "./assets/photos/微信图片_20260419104153.jpg",
-                       "title":  "微信图片_20260419104153",
+                       "src":  "./assets/photos/椅.jpg",
+                       "title":  "椅",
                        "date":  "2026-04-19"
                    }
                ]
